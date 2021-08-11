@@ -13,6 +13,7 @@ module.exports = {
     },
     devtool: '#eval-source-map',
     devServer: {
+        port: 9000,
         historyApiFallback: true,
         overlay: true
     },
@@ -98,7 +99,8 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: 'index.html',
             template: 'index.html',
-            inject: true
+            inject: true,
+            favicon: path.resolve('favicon.ico')
         })
     ]
 }
@@ -118,7 +120,7 @@ if (process.env.NODE_ENV === 'production') {
             'process.env': {
                 NODE_ENV: '"development"'
             }
-        }),
+        })
     ])
 }
   
