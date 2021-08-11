@@ -3,7 +3,7 @@
 	<img src="@/assets/logo.png">
 
     <h1>{{ msg }}</h1>
-  <p>
+  <p class="hellow-world-p">
     <a href="https://vitejs.dev/guide/features.html" target="_blank">Vite Documentation</a>
     <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Documentation</a>
   </p>
@@ -20,8 +20,10 @@ export default {
 }
 </script>
 
-<style scoped>
-a {
-  color: #42b983;
+<style lang="scss" scoped>
+.hellow-world-p {
+  a {
+    color: #42b983;
+  }
 }
 </style>

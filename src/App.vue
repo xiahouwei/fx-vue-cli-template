@@ -20,10 +20,9 @@ export default {
 		this.fetchData();
 	},
 	methods: {
-		fetchData() {
-			this.getData().then((data) => {
-				this.msg = data;
-			})
+		async fetchData() {
+			const data = await this.getData()
+			this.msg = data
 		},
 		getData () {
 			return new Promise(resolve => {
@@ -37,11 +36,7 @@ export default {
 }
 </script>
 <style lang="scss">
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-
-  h1 {
-    color: green;
-  }
+h1 {
+	color: green;
 }
 </style>
