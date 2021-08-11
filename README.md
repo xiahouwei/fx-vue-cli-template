@@ -1,1 +1,1 @@
-# a minimum and pure example of **webpack hot module replacement**
+# 风行vue-cli模板
