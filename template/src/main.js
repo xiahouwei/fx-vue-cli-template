@@ -15,12 +15,20 @@ import initLang from './lang'
 import './assets/style/common.scss';
 
 fxService(Vue)
+{{#fxLogger}}
 fxLogger(Vue)
+{{/fxLogger}}
 
+{{#i18n}}
 const i18n = initLang(Vue)
+{{/i18n}}
 
 new Vue({
-  i18n,
+  {{#router}}
   router,
+  {{/router}}
+  {{#i18n}}
+  i18n,
+  {{/i18n}}
   render: h => h(App)
 }).$mount('#app')
