@@ -14,7 +14,9 @@ import initLang from './lang'
 {{/i18n}}
 import './assets/style/common.scss';
 
+{{#fxService}}
 fxService(Vue)
+{{/fxService}}
 {{#fxLogger}}
 fxLogger(Vue)
 {{/fxLogger}}
