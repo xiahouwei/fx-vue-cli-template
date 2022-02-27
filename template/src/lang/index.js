@@ -5,7 +5,7 @@ export default function (Vue) {
 	const i18n = new VueI18n({
 		locale: 'zh-CN',
 		messages: {
-			'zh-CN': require('@/lang/zh/index.js')
+			'zh-CN': require('./zh/index.js')
 		}
 	})
 	return i18n

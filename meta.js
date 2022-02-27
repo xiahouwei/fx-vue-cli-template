@@ -30,7 +30,12 @@ module.exports = {
         fxLogger: {
             type: 'confirm',
             message: 'use fx-logger(风行日志功能模块)?',
-        },
-
-    }
+        }
+    },
+    filters: {
+        'src/router/**/*': 'router',
+        'src/fxLogger/**/*': 'fxLogger',
+        'src/service/**/*': 'fxService',
+        'src/lang/**/*': 'i18n'
+      },
 }
