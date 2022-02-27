@@ -1,8 +1,6 @@
 <template>
 <div>
-	<img src="@/assets/logo.png">
-
-    <h1>{{ msg }}</h1>
+  <h1>{{ msg }}</h1>
   <p class="hellow-world-p">
     <a href="https://vitejs.dev/guide/features.html" target="_blank">Vite Documentation</a>
     <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Documentation</a>
